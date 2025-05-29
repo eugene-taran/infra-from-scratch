@@ -12,6 +12,7 @@ This project is an educational, in-public build of core developer tooling and cl
 infra-from-scratch/
 │
 ├── README.md                # This file
+├── docs/                    # All the docs that not belong to particular folder
 ├── terraform/               # Infrastructure-as-code
 ├── backend/                 # Example backend service(s) in Node.js
 ├── frontend/                # Example frontend
@@ -36,6 +37,14 @@ infra-from-scratch/
 Follow me at [twitch.tv/deveugene](https://twitch.tv/deveugene) for live coding, Q&A, and deep dives.
 
 ---
+
+## 🔍 Alternatives & Research
+
+Curious about different approaches for bootstrapping infrastructure?  
+See [docs/alternatives.md](./docs/alternatives.md) for a growing list of research, tools, and ready-made templates explored as part of this project.
+
+---
+
 
 ## 📂 How to Use This Repo
 
