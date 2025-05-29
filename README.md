@@ -6,20 +6,26 @@ This project is an educational, in-public build of core developer tooling and cl
 
 ---
 
+## 📑 Table of Contents
+
+- [Monorepo Structure](#-monorepo-structure)
+- [Main Topics](#-main-topics)
+- [Follow the Journey](#-follow-the-journey)
+- [Alternatives & Research](#-alternatives-&-research)
+- [How to Use This Repo](#-how-to-use-this-repo)
+- [License](#-license)
+
+---
+
 ## 🏗️ Monorepo Structure
 
-```txt
-infra-from-scratch/
-│
-├── README.md                # This file
-├── docs/                    # All the docs that not belong to particular folder
-├── terraform/               # Infrastructure-as-code
-├── backend/                 # Example backend service(s) in Node.js
-├── frontend/                # Example frontend
-├── e2e/                     # End-to-end test setup
-├── docs/                    # Extended docs, research, and guidelines
-└── .github/                 # GitHub actions
-```
+- `terraform/` — Infrastructure-as-code
+- `backend/` — Example backend service(s)
+- `frontend/` — Example frontend
+- `e2e/` — End-to-end test setup
+- `docs/` — Extended docs, research, and guidelines
+- `.github/` — GitHub actions, issue templates, etc.
+
 
 ## 📚 Main Topics
 
