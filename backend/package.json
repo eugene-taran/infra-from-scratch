@@ -1,0 +1,8 @@
+{
+  "name": "backend",
+  "private": true,
+  "workspaces": [
+    "gateway"
+  ],
+  "license": "MIT"
+}
