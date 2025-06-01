@@ -9,14 +9,28 @@
     "@eslint/js": "^9.27.0",
     "@stylistic/eslint-plugin": "^4.4.0",
     "eslint": "^9.27.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.0",
+    "prettier": "3.5.3",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.33.0"
   },
   "scripts": {
     "lint": "yarn workspaces run lint",
-    "build": "yarn workspaces run build"
+    "build": "yarn workspaces run build",
+    "test": "yarn workspaces run test"
   },
   "engines": {
     "node": "24.x.x"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": "eslint --fix"
   }
 }
