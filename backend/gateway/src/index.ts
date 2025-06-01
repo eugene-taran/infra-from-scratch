@@ -1,15 +1,15 @@
-import express from 'express';
+import express from 'express'
 
-const app = express();
-const port = process.env.PORT || 3000;
+const app = express()
+const port = process.env.PORT || 3000
 
 type Concert = {
-    id: string;
-    artist: string;
-    date: string;    // ISO date string
-    venue: string;
-    city: string;
-};
+    id: string
+    artist: string
+    date: string
+    venue: string
+    city: string
+}
 
 const concerts: Concert[] = [
     {
@@ -33,17 +33,17 @@ const concerts: Concert[] = [
         venue: 'Olympiastadion',
         city: 'Berlin'
     }
-];
+]
 
 // reroute to /api/concerts as root endpoint for now
 app.get('/', (_req, res) => {
-    res.redirect('/api/concerts');
-});
+    res.redirect('/api/concerts')
+})
 
 app.get('/api/concerts', (_req, res) => {
-    res.json(concerts);
-});
+    res.json(concerts)
+})
 
 app.listen(port, () => {
-    console.log(`Gateway service running at http://localhost:${port}`);
-});
+    console.log(`Gateway service running at http://localhost:${port}`)
+})
