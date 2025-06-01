@@ -18,6 +18,7 @@ export const start = () => {
 export const stop = () => {
     server?.close(() => {
         console.log('Gateway service has been stopped.')
+        process.exit(0)
     })
 }
 
