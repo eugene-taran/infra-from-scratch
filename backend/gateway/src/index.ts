@@ -14,7 +14,11 @@ export const start = () => {
 
 }
 
+// should be used in shutdownHook
 export const stop = () => {
     server?.close(() => {
     })
 }
+
+start()
+
