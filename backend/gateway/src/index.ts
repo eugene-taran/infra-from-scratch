@@ -14,7 +14,23 @@ export const start = () => {
 
 }
 
+// Used to gracefully shut down the server during application termination
 export const stop = () => {
     server?.close(() => {
+        console.log('Gateway service has been stopped.')
+        process.exit(0)
     })
 }
+
+// Wire stop() to process signals for graceful shutdown
+process.on('SIGINT', () => {
+    console.log('Received SIGINT. Shutting down...')
+    stop()
+})
+
+process.on('SIGTERM', () => {
+    console.log('Received SIGTERM. Shutting down...')
+    stop()
+})
+start()
+
