@@ -25,13 +25,11 @@ export const stop = () => {
 process.on('SIGINT', () => {
     console.log('Received SIGINT. Shutting down...')
     stop()
-    process.exit(0)
 })
 
 process.on('SIGTERM', () => {
     console.log('Received SIGTERM. Shutting down...')
     stop()
-    process.exit(0)
 })
 start()
 
