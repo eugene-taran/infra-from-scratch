@@ -1,14 +1,18 @@
 import request from 'supertest'
-import app, { start, stop } from '../index'
+import {createExpressServer} from "../createExpressServer"
+import * as http from "node:http"
 
 describe('GET /api/events', () => {
 
+    const app = createExpressServer()
+    let server: http.Server | undefined
+
     beforeAll(() => {
-        start()
+       server = app.listen()
     })
 
     afterAll(() => {
-        stop()
+        server?.close()
     })
 
     it('should return a list of events', async () => {
