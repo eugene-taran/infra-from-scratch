@@ -6,7 +6,7 @@ let server: Server | undefined
 export const start = () => {
     const app = createExpressServer()
 
-    server = app.listen(() => {
+    server = app.listen(3000, () => {
         console.log(`Gateway service running at http://localhost:3000`)
     }).on('error', error => {
         throw error
