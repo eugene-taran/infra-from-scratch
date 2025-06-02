@@ -2,12 +2,13 @@
 
 > **A monorepo for building modern developer infrastructure from scratch — live on Twitch.**
 
-This project is an educational, in-public build of core developer tooling and cloud infrastructure, using Node.js, Terraform, Google Cloud, and more. The goal: learn, document, and templatize everything needed to bootstrap production-grade platforms fast.
+This project is an educational, in-public build of core developer tooling and cloud infrastructure, using Node.js, Terraform, Google Cloud, and more. The goal is to learn and have everything ready to quickly start a new project with all developer tooling already in place.
 
 ---
 
 ## 📑 Table of Contents
 
+- [Current plans](#current-plans)
 - [Monorepo Structure](#-monorepo-structure)
 - [Main Topics](#-main-topics)
 - [Follow the Journey](#-follow-the-journey)
@@ -17,15 +18,20 @@ This project is an educational, in-public build of core developer tooling and cl
 
 ---
 
+## Current plans
+
+- [x] Set up Node.js backend service (Typescript, ESLint, Prettier, Jest)
+- [ ] Set up Github Actions for building docker image
+- [ ] Set up k8s cluster to deploy backend service
+- [ ] Add another Node.js backend service and deploy it to the same k8s cluster
+- [ ] Set up monitoring and observability (Prometheus, Grafana, OpenTelemetry)
+
 ## 🏗️ Monorepo Structure
 
 - `terraform/` — Infrastructure-as-code
 - `backend/` — Example backend service(s)
-- `frontend/` — Example frontend
-- `e2e/` — End-to-end test setup
 - `docs/` — Extended docs, research, and guidelines
 - `.github/` — GitHub actions, issue templates, etc.
-
 
 ## 📚 Main Topics
 
@@ -34,23 +40,14 @@ This project is an educational, in-public build of core developer tooling and cl
 - **Bootstrapping Node.js services**
 - **CI/CD pipelines**
 - **End-to-end testing strategies**
-- **Reusable templates and scaffolding**
-
----
 
 ## 📺 Follow the Journey
 
 Follow me at [twitch.tv/deveugene](https://twitch.tv/deveugene) for live coding, Q&A, and deep dives.
 
----
+## 🔍 Alternatives
 
-## 🔍 Alternatives & Research
-
-Curious about different approaches for bootstrapping infrastructure?  
-See [docs/alternatives.md](./docs/alternatives.md) for a growing list of research, tools, and ready-made templates explored as part of this project.
-
----
-
+See [docs/alternatives.md](./docs/alternatives.md) for a list of tools that can help you spin up your infra
 
 ## 📂 How to Use This Repo
 
@@ -59,12 +56,8 @@ See [docs/alternatives.md](./docs/alternatives.md) for a growing list of researc
 - How to launch example services  
 - How to adapt this template for your own projects
 
----
-
 ## 🪧 License
 
 MIT — see [LICENSE](./LICENSE).
-
----
 
 PRs, suggestions, and feedback are welcome!
