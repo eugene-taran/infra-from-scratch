@@ -1,0 +1,49 @@
+name: Build, Test, and Publish Docker Image
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-test-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24.1
+
+      - name: Cache Yarn dependencies
+        uses: actions/cache@v3
+        with:
+          path: backend/node_modules
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      - name: Install dependencies
+        run: |
+          cd backend
+          yarn install --frozen-lockfile
+
+      - name: Run tests
+        run: |
+          cd backend
+          yarn workspace gateway test
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push Docker image
+        run: |
+          cd backend
+          docker build -f gateway/Dockerfile -t ghcr.io/${{ github.repository_owner }}/gateway:latest .
+          docker push ghcr.io/${{ github.repository_owner }}/gateway:latest

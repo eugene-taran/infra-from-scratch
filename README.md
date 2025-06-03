@@ -12,7 +12,7 @@ This project is an educational, in-public build of core developer tooling and cl
 - [Monorepo Structure](#-monorepo-structure)
 - [Main Topics](#-main-topics)
 - [Follow the Journey](#-follow-the-journey)
-- [Alternatives & Research](#-alternatives--research)
+- [Alternatives](#-alternatives)
 - [How to Use This Repo](#-how-to-use-this-repo)
 - [License](#-license)
 
