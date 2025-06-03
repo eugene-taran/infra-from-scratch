@@ -45,5 +45,5 @@ jobs:
       - name: Build and push Docker image
         run: |
           cd backend
-          docker build -f gateway/Dockerfile -t ghcr.io/${{ github.repository_owner }}/gateway:latest .
-          docker push ghcr.io/${{ github.repository_owner }}/gateway:latest
+          docker build -f gateway/Dockerfile -t ghcr.io/eugene-taran/gateway:latest .
+          docker push ghcr.io/eugene-taran/gateway:latest
