@@ -10,5 +10,5 @@ terraform {
 
 provider "google" {
   project = "infra-from-scratch-462020"
-  region  = "europe-west3"
+  region  = var.region
 }
