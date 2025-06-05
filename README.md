@@ -2,7 +2,7 @@
 
 > **A monorepo for building modern developer infrastructure from scratch — live on Twitch.**
 
-This project is an educational, in-public build of core developer tooling and cloud infrastructure, using Node.js, Terraform, Google Cloud, and more. The goal is to learn and have everything ready to quickly start a new project with all developer tooling already in place.
+This project is an educational build of core developer tooling and cloud infrastructure, using Node.js, Terraform, Google Cloud, and more. The goal is to learn and have everything ready to quickly start a new project with all developer tooling already in place.
 
 ---
 
@@ -42,10 +42,6 @@ This project is an educational, in-public build of core developer tooling and cl
 - **Bootstrapping Node.js services**
 - **CI/CD pipelines**
 - **End-to-end testing strategies**
-
-## 📺 Follow the Journey
-
-Follow me at [twitch.tv/deveugene](https://twitch.tv/deveugene) for live coding, Q&A, and deep dives.
 
 ## 🔍 Alternatives
 
