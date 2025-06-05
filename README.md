@@ -22,8 +22,9 @@ This project is an educational, in-public build of core developer tooling and cl
 
 - [x] Set up Node.js backend service (Typescript, ESLint, Prettier, Jest)
 - [x] Set up Github Actions for building docker image
-- [ ] Set up infra repo with terraform and gcloud account
-- [ ] Set up k8s cluster to deploy backend service
+- [x] Set up infra repo with terraform and gcloud account
+- [ ] Set up k8s cluster
+- [ ] Deploy gateway service to k8s cluster (need to use helm charts)
 - [ ] Add another Node.js backend service and deploy it to the same k8s cluster
 - [ ] Set up monitoring and observability (Prometheus, Grafana, OpenTelemetry)
 

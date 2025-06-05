@@ -136,3 +136,6 @@ dist
 
 # Intellij
 .idea
+
+# terraform
+.terraform/
