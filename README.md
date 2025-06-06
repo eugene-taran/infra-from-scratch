@@ -1,6 +1,6 @@
 # infra-from-scratch
 
-> **A monorepo for building modern developer infrastructure from scratch — live on Twitch.**
+> **A monorepo for building modern developer infrastructure from scratch
 
 This project is an educational build of core developer tooling and cloud infrastructure, using Node.js, Terraform, Google Cloud, and more. The goal is to learn and have everything ready to quickly start a new project with all developer tooling already in place.
 
