@@ -4,6 +4,12 @@
 
 This project is an educational build of core developer tooling and cloud infrastructure, using Node.js, Terraform, Google Cloud, and more. The goal is to learn and have everything ready to quickly start a new project with all developer tooling already in place.
 
+Work on this project is currently on hold due to participation in the [Gen AI Startup School](https://cloudonair.withgoogle.com/events/startup-school-ai-q2)
+
+Also to try monitoring set up currently [microservices-demo](https://github.com/GoogleCloudPlatform/microservices-demo) and [microservices-on-gke](https://github.com/GoogleCloudPlatform/terraform-ecommerce-microservices-on-gke) are considered.
+
+There can be an update with new repo link if I switch to microservices-demo repo fork.
+
 ---
 
 ## 📑 Table of Contents
