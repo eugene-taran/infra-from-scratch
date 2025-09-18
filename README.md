@@ -1,6 +1,8 @@
 # infra-from-scratch
 
-As the new ideas after this project emerged, this project is now in **deprecated** state.
+## 🗄️ Archive Notice
+
+This project is now in **archive mode**. New development has ceased as the ideas and learnings from this project have evolved into other initiatives.
 
 > **A monorepo for building modern developer infrastructure from scratch
 
@@ -15,7 +17,6 @@ Also to try monitoring set up currently [microservices-demo](https://github.com/
 - [Current plans](#current-plans)
 - [Monorepo Structure](#-monorepo-structure)
 - [Main Topics](#-main-topics)
-- [Follow the Journey](#-follow-the-journey)
 - [Alternatives](#-alternatives)
 - [How to Use This Repo](#-how-to-use-this-repo)
 - [License](#-license)
